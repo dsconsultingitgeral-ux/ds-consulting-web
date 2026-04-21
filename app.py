@@ -35,7 +35,7 @@ st.markdown("""
 
 # 2. BARRA LATERAL (MENU)
 with st.sidebar:
-    st.image("https://img.icons8.com/fluency/96/artificial-intelligence.png", width=80)
+    img.icons8.com/fluency/96/artificial-intelligence.png", width=80)
     st.title("DS Consulting IT")
     st.markdown("---")
     menu = st.radio(
