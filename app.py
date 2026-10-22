@@ -89,10 +89,8 @@ with st.sidebar:
     st.markdown("---")
     menu_list = ["🏠 Início", "🎯 Estratégia", "💰 Catálogo", "🧪 Laboratório"]
     
-    # Navegação Dinâmica
-    current_index = menu_list.index(st.session_state.menu_option)
-    menu = st.radio("Navegação Principal:", menu_list, index=current_index)
-    st.session_state.menu_option = menu
+    # CORREÇÃO APLICADA: O parâmetro key gere o estado nativamente e evita o duplo clique
+    st.radio("Navegação Principal:", menu_list, key="menu_option")
 
     st.markdown("---")
     st.markdown("### 💡 **Contacto Direto**")
