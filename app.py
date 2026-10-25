@@ -1,5 +1,6 @@
 import streamlit as st
 
+
 # 1. CONFIGURAÇÃO DA PÁGINA (Identidade Visual de Luxo)
 st.set_page_config(
     page_title="Digital Solutions & Consulting IT | Transformação Digital de Elite",
