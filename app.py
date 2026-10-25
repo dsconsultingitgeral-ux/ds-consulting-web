@@ -285,7 +285,7 @@ translations = {
         "vision_text": "Essere il partner strategico che semplifica la tecnologia. Vogliamo che i nostri clienti utilizzino l'IA e l'automazione come strumenti naturali quotidiani.",
         "why_us": "📊 **Perché noi?**\n\n- Focus su Micro e Piccole Imprese\n- Uso di strumenti già posseduti\n- Riduzione degli errori umani\n- ROI in tempo reale",
         "specialists": "✨ **Specialisti in:**\n- Python & Automazione\n- Power Automate\n- Agenti IA Personalizzati",
-        "strat_title": "Il Metodo in 4 Fasi ⚡",
+        "strat_title": "Il Metodo in 4 Fases ⚡",
         "strat_sub": "Un approccio strutturato per garantire risultati solidi e scalabili.",
         "p1_title": "1️⃣ Audit e Diagnosi",
         "p1_desc": "Analizziamo il tuo flusso di lavoro attuale per identificare dove la tecnologia e l'IA possono eliminare le attività ripetitive.",
@@ -313,7 +313,7 @@ translations = {
         "lab_box_text": "Siamo lieti di presentare il nostro nuovo Consulente di Intelligenza Artificiale – disponibile ora per te!",
         "lab_box_btn": "PROVALO QUI (GRATIS)",
         "email_proc_title": "📧 Agenti di Elaborazione Email",
-        "email_proc_info": "Invia un'email a **ds.consulting.it.geral@gmail.com**. Il nostro motore elabora le richieste e reindirizza la risposta analizzata.",
+        "email_proc_info": "Invia un'email a **ds.consulting.it.geral@gmail.com**. Il nostro motore elabora le richieste e reindirizza la risposta analizada.",
         "exp1_title": "📊 [ai data] – Il tuo Excel con Intelligenza",
         "exp1_text": "Invia un file Excel o CSV con il tag **[ai data]** nell'oggetto.\n**Cosa ricevi:** Un report PDF professionale con analisi statistica e grafici dinamici.",
         "exp2_title": "💡 [AI Solutions] – Consulenza Strategica",
@@ -326,11 +326,11 @@ translations = {
 
 # 3. BARRA LATERAL (BRANDING, LÍNGUA & CONTACTOS)
 with st.sidebar:
-    # Seletor de Língua no topo da barra lateral com bandeiras
+    # Seletor de Língua no topo da barra lateral com bandeiras (Inglês pré-selecionado com index=0)
     selected_lang = st.selectbox(
         "🌐 Language / Idioma / Langue", 
         ["🇬🇧 English", "🇵🇹 Português", "🇫🇷 Français", "🇪🇸 Español", "🇮🇹 Italiano"],
-        index=1 # Predefinido para Português (ou podes alterar para 0 para Inglês por defeito)
+        index=0 
     )
     
     t = translations[selected_lang]
@@ -416,7 +416,7 @@ elif st.session_state.menu_option == t["menu"][2]:
             st.markdown(f"""
             <div class="service-card">
                 <h3 style="color:#1e40af;">{s['T']}</h3>
-                <p><b>Investimento:</b> <span style="color:#2563eb; font-size:1.1em; font-weight:600;">{t['budget_label']}</span></p>
+                <p><b>Investment:</b> <span style="color:#2563eb; font-size:1.1em; font-weight:600;">{t['budget_label']}</span></p>
                 <p style="color:#475569;">{s['D']}</p>
             </div><br>
             """, unsafe_allow_html=True)
